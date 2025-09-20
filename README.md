@@ -1,2 +1,3 @@
 # escience
-A powerful statically-served web tool for all things science.
+A powerful web app for all things science.
+Written in Next.js
