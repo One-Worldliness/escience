@@ -19,12 +19,20 @@ body {
   background: linear-gradient(-45deg, var(--color-bg1), var(--color-bg2), var(--color-bg3), var(--color-bg4));
   background-size: 400% 400%;
   animation: gradient 30s ease infinite;
+  will-change: background-position;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 1rem;
+}
+
+/* Disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+  }
 }
 
 @keyframes gradient {
